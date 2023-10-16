@@ -26,7 +26,8 @@ const UpdateCard = ({ singleData }) => {
     };
     console.log(updateInfo);
 
-    fetch(`https://coffe-server-site-hxjlqk8tc-riad-hasan-rajus-projects.vercel.app/coffees/${_id}`, {
+    fetch(`https://coffe-server-site.vercel.app/coffees/${_id}`,{
+
       method: "PUT",
       headers: {
         "content-type": "application/json",

@@ -19,7 +19,7 @@ const Home = () => {
            <div>
               <HomeCardTitle /> 
             <div className=' w-9/12 mx-auto grid grid-cols-1  lg:grid-cols-2 my-10 gap-5 mt-10'>
-                {data.map(item => <HomeCard key={item._id} data={item} dataD={data} setDataD={setDataD} />)}
+                {data?.map(item => <HomeCard key={item._id} data={item} dataD={data} setDataD={setDataD} />)}
             </div>
            </div>
             </div>

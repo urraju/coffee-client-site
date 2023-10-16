@@ -15,7 +15,7 @@ const HomeCard = ({ data, dataD, setDataD }) => {
       confirmButtonText: "Yes, delete it!",
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`https://coffe-server-site-hxjlqk8tc-riad-hasan-rajus-projects.vercel.app/coffees/${data._id}`, {
+        fetch(`https://coffe-server-site.vercel.app/coffees/${data._id}`, {
           method: "DELETE",
         })
           .then((res) => res.json())

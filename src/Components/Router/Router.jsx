@@ -20,7 +20,7 @@ const router = createBrowserRouter([
             {
                 path : '/',
                 element : <Home/>,
-                loader : () => fetch('https://coffe-server-site-hxjlqk8tc-riad-hasan-rajus-projects.vercel.app/coffees')
+                loader : () => fetch('https://coffe-server-site.vercel.app/coffees')
             },
             {
                 path : '/getcoffee',
@@ -29,7 +29,7 @@ const router = createBrowserRouter([
             {
                 path : '/update/:id',
                 element : <Update/>,
-                loader : ({params}) => fetch(`https://coffe-server-site-hxjlqk8tc-riad-hasan-rajus-projects.vercel.app/coffees/${params.id}`)
+                loader : ({params}) => fetch(`https://coffe-server-site.vercel.app/coffees/${params.id}`)
             },
             {
                 path : '/homecard',
@@ -39,7 +39,7 @@ const router = createBrowserRouter([
             {
                 path : '/singlecoffee/:id',
                 element : <SingleCoffee />,
-                loader : ({params}) => fetch(`https://coffe-server-site-hxjlqk8tc-riad-hasan-rajus-projects.vercel.app/coffees/${params.id}`)
+                loader : ({params}) => fetch(`https://coffe-server-site.vercel.app/coffees/${params.id}`)
                
                 
             }

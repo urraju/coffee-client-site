@@ -15,7 +15,7 @@ const Form = () => {
     const userInfo = {name,price,photo, supplier,taste,category,details,}
      
 
-    fetch(`https://coffe-server-site-hxjlqk8tc-riad-hasan-rajus-projects.vercel.app/coffees`, {
+    fetch(`https://coffe-server-site.vercel.app/coffees`, {
       method : 'POST',
       headers : {
         'content-type' : 'application/json'
